@@ -10,14 +10,14 @@ response = requests.get(url)
 # print('1: ', response)
 # print('2: ', type(response))
 
-# r.text: 返回網頁HTML原始碼
-# r.encoding: 返回目前網頁編碼方式，可以透過設置編碼格式(通常使用萬國碼utf-8)
+# response.text: 返回網頁HTML原始碼
+# response.encoding: 返回目前網頁編碼方式，可以透過設置編碼格式(通常使用萬國碼utf-8)
 response.encoding = 'utf-8'
 
-# r.url: 返回網址
-# r.content: 返回網站內容
-# r.status_code: 返回response的狀態碼
-# r.headers: 返回response的標題訊息: DevTool->network->Response Headers
+# response.url: 返回網址
+# response.content: 返回網站內容
+# response.status_code: 返回response的狀態碼
+# response.headers: 返回response的標題訊息: DevTool->network->Response Headers
 # print('1: ', response.text)
 # print('2: ', response.encoding)
 # print('3: ', response.url)
@@ -41,7 +41,7 @@ response.encoding = 'utf-8'
 # 503 Service Unavailable：伺服器臨時維護或是快掛了，暫時無法處理請求(臨時流量過大)。
 # 504 Gateway Timeout：伺服器上的服務沒有回應。
 
-# 需要UA
+# 補充連結
 # url = https://www.rakuya.com.tw/
 # 403
 # url = 'https://ithelp.ithome.com.tw/' 
