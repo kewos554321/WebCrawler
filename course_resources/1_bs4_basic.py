@@ -88,7 +88,7 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # print('2: ', soup.select('div > p'))
 # print('3: ', soup.select('div > ul > p'))
 # print('4: ', soup.select('div > p, span'))
-
+print(soup.select('ul > a'))
 # 4-1 擷取標籤內文字
 # 有兩個方法:1. `.string` 2. `get_text()`
 # obj = soup.select('div p')
