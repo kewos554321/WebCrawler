@@ -1,1 +1,7 @@
-./venv/*
+# 忽略虛擬環境目錄
+venv/
+
+# 如果你使用的是 Python 3.3+ 的 venv
+__pycache__/
+*.pyc
+*.pyo
